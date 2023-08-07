@@ -1,0 +1,52 @@
+.header {
+    border-bottom: 2px solid $border-bt;
+    padding: 22px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 90px;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 45px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $text;
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    &__list {
+    display: flex;
+    }
+
+    &__item {
+        
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 1.1;
+        letter-spacing: 0.32px;
+    }
+}

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DolGuldur</title>
+    <title>web-studio DolGuldur</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Roboto&family=Rubik:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -15,15 +15,9 @@
         <div class="container">
             <div class="header__wrap">
                 <nav class="menu">
-                    <div class="logo">
-                        <a class="logo__link" href="#">
-                            <!-- Иконки не подтянулись -->
-                            <svg class="svg" width="30" height="30">
-                                <use href="./images/icons/logo.svg#logo"></use>
-                            </svg>
-                            Dol<span class="logo__text">Guldur</span>
-                        </a>
-                    </div>
+                    <a class="logo header__logo" href="#">
+                        <img class="logo__img" src="./images/content/logo.svg" width="189" height="36" alt="DolGuldur logo">
+                    </a>
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a class="menu__link" href="#">
@@ -42,33 +36,29 @@
                         </li>
                     </ul>
                 </nav>
-                <address class="address">
-                    <ul class="address__list">
-                        <li class="address__item">
-                            <!-- Иконки не подтянулись -->
-                            <a class="address__link" href="mailto:info@dolguldur.com">
-                                <svg class="address__svg" width="16" height="12">
-                                    <use href="./images/icons/mail.svg#mail"></use>
-                                </svg>
-                                info@dolguldur.com
-                            </a>
-                        </li>
-                        <li class="address__item">
-                            <!-- Иконки не подтянулись -->
-                            <a class="address__link" href="tel:+380961111111">
-                                <svg class="address__svg" width="10" height="16">
-                                    <use href="./images/icons/smartphone.svg#smartphone"></use>
-                                </svg>
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                    </ul>
-                </address>
+                <ul class="header__contacts">
+                    <li class="header__item">
+                        <a class="header__link" href="mailto:info@dolguldur.com">
+                            <svg class="header__icon" width="16" height="12">
+                                <use href="./images/icons/icons.svg#mail"></use>
+                            </svg>
+                            info@dolguldur.com
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="tel:+380961111111">
+                            <svg class="header__icon" width="10" height="16">
+                                <use href="./images/icons/icons.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="hero" style="background-image: url('./images/content/bg.jpg');">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__title">
                     author's forge where your sites are created
@@ -80,12 +70,12 @@
         </section>
         <section class="technology section">
             <div class="container">
-                <h2 class="title sr-only">
+                <h2 class="sr-only">
                     technology
                 </h2>
                 <ul class="technology__list">
                     <li class="technology__item">
-                        <h3 class="technology__title">
+                        <h3 class="technology__subtitle">
                             Effective team
                         </h3>
                         <p class="technology__text">
@@ -93,7 +83,7 @@
                         </p>
                     </li>
                     <li class="technology__item">
-                        <h3 class="technology__title">
+                        <h3 class="technology__subtitle">
                             punctuality
                         </h3>
                         <p class="technology__text">
@@ -101,7 +91,7 @@
                         </p>
                     </li>
                     <li class="technology__item">
-                        <h3 class="technology__title">
+                        <h3 class="technology__subtitle">
                             planning
                         </h3>
                         <p class="technology__text">
@@ -109,7 +99,7 @@
                         </p>
                     </li>
                     <li class="technology__item">
-                        <h3 class="technology__title">
+                        <h3 class="technology__subtitle">
                             innovation
                         </h3>
                         <p class="technology__text">
@@ -126,22 +116,22 @@
                 </h2>
                 <ul class="services__list">
                     <li class="services__item">
-                        <img class="services__img" src="./images/content/desktop.jpg" width="370" height="294" alt="desktop">
-                        <p class="services__text">
+                        <h3 class="services__text">
                             desktop apps
-                        </p>
+                        </h3>
+                        <img class="services__img" src="./images/content/desktop.jpg" width="370" height="294" alt="desktop">
                     </li>
                     <li class="services__item">
-                        <img class="services__img" src="./images/content/mobile.jpg" width="370" height="294" alt="mobile">
-                        <p class="services__text">
+                        <h3 class="services__text">
                             mobile apps
-                        </p>
+                        </h3>
+                        <img class="services__img" src="./images/content/mobile.jpg" width="370" height="294" alt="mobile">
                     </li>
                     <li class="services__item">
-                        <img class="services__img" src="./images/content/modern.jpg" width="370" height="294" alt="modern">
-                        <p class="services__text">
+                        <h3 class="services__text">
                             modern design
-                        </p>
+                        </h3>
+                        <img class="services__img" src="./images/content/modern.jpg" width="370" height="294" alt="modern">
                     </li>
                 </ul>
             </div>
@@ -153,47 +143,47 @@
                 </h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__img" src="./images/content/paul.jpg" width="270" height="260" alt="paul">
+                        <img class="team__img" src="./images/content/paul.jpg" width="270" height="260" alt="Paul Castanie">
                         <div class="team__info">
-                            <p class="team__name">
+                            <h3 class="team__name">
                                 Paul Castanie
-                            </p>
-                            <span class="team__work">
+                            </h3>
+                            <p class="team__work">
                                 Product Designer
-                            </span>
+                            </p>
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/content/nix.jpg" width="270" height="260" alt="nix">
+                        <img class="team__img" src="./images/content/nix.jpg" width="270" height="260" alt="Joanna Nix">
                         <div class="team__info">
-                            <p class="team__name">
+                            <h3 class="team__name">
                                 Joanna Nix
-                            </p>
-                            <span class="team__work">
+                            </h3>
+                            <p class="team__work">
                                 Frontend Developer
-                            </span>
+                            </p>
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/content/aldo.jpg" width="270" height="260" alt="aldo">
+                        <img class="team__img" src="./images/content/aldo.jpg" width="270" height="260" alt="Aldo Delara">
                         <div class="team__info">
-                            <p class="team__name">
+                            <h3 class="team__name">
                                 Aldo Delara
-                            </p>
-                            <span class="team__work">
+                            </h3>
+                            <p class="team__work">
                                 Marketing
-                            </span>
+                            </p>
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/content/odunsi.jpg" width="270" height="260" alt="odunsi">
+                        <img class="team__img" src="./images/content/odunsi.jpg" width="270" height="260" alt="Oladimeji Odunsi">
                         <div class="team__info">
-                            <p class="team__name">
+                            <h3 class="team__name">
                                 Oladimeji Odunsi
-                            </p>
-                            <span class="team__work">
+                            </h3>
+                            <p class="team__work">
                                 UI Designer
-                            </span>
+                            </p>
                         </div>
                     </li>
                 </ul>
@@ -202,31 +192,30 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="logo logo--indent">
-                <a class="logo__link logo__link--size" href="#">
-                    <img class="logo__img" src="./images/content/logo-icon.jpg"  width="30" height="30" alt="logo">
-                    Dol<span class="logo__text logo__text--white">Guldur</span>
+            <div class="footer__adress">
+                <a class="logo footer__logo" href="#">
+                    <img class="logo__img" src="./images/content/logo-light.svg" width="140" height="25" alt="DolGuldur logo">
                 </a>
+                <address class="address">
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <a class="address__link address__link--white" href="#">
+                                14 Green St., Belmont, Boston. USA
+                            </a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link address__link--orange" href="mailto:info@dolguldur.com">
+                                info@dolguldur.com
+                            </a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link address__link--orange" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </address>
             </div>
-            <address class="address">
-                <ul class="address__list address__list--column">
-                    <li class="address__item address__item--indent">
-                        <a class="address__link address__link--white" href="#">
-                            14 Green St., Belmont, Boston. USA
-                        </a>
-                    </li>
-                    <li class="address__item address__item--indent">
-                        <a class="address__link address__link--orange" href="mailto:info@dolguldur.com">
-                            info@dolguldur.com
-                        </a>
-                    </li>
-                    <li class="address__item address__item--indent">
-                        <a class="address__link address__link--orange" href="tel:+380961111111">
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-            </address>
         </div>
     </footer>
     <script src="js/main.min.js"></script>
