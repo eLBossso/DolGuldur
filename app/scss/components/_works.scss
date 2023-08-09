@@ -1,0 +1,50 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &__filter {
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 0.48px;
+        padding: 11px 26px;
+        border-radius: 4px;
+        background-color: $team-bg;
+    }
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+
+    &__info {
+        padding: 20px 24px;
+        border-right: 1px solid $text;
+        border-bottom: 1px solid $text;
+        border-left: 1px solid $text;
+        background-color: $white;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 2;
+        letter-spacing: 1.08px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.48px;
+        color: $text;
+    }
+}

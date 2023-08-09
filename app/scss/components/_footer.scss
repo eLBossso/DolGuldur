@@ -2,7 +2,7 @@
     padding: 60px 0;
     background-color: $footer;
 
-    &__adress {
+    &__wrap {
         max-width: 240px;
         width: 100%;
     }
@@ -15,22 +15,20 @@
 
 .address {
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+    &__item {
+        
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
 
     &__link {
         display: flex;
         align-items: center;
+        color: $link;
 
         &--white {
             color: $white;
-        }
-
-        &--orange {
-            color: $link;
         }
     }
 
