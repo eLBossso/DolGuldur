@@ -7,65 +7,88 @@
     <title>web-studio DolGuldur</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__wrap">
-                <nav class="menu">
-                    <a class="logo header__logo" href="#">
-                        <img class="logo__img" src="./images/content/logo.svg" width="189" height="36" alt="DolGuldur logo">
-                    </a>
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="./works.html">
-                                Our Works
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Contacts
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="header__contacts">
-                    <li class="header__item">
-                        <a class="header__link" href="mailto:info@dolguldur.com">
-                            <svg class="header__icon" width="16" height="12">
-                                <use href="./images/icons/icons.svg#mail"></use>
-                            </svg>
-                            info@dolguldur.com
+        <div class="container header__wrap">
+            <nav class="menu">
+                <a class="logo header__logo" href="#">
+                    <img class="logo__img" src="./images/content/logo.svg" width="189" height="36" alt="DolGuldur logo">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link current" href="#">
+                            Home
                         </a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__link" href="tel:+380961111111">
-                            <svg class="header__icon" width="10" height="16">
-                                <use href="./images/icons/icons.svg#smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11
+                    <li class="menu__item">
+                        <a class="menu__link" href="./works.html">
+                            Our Works
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Contacts
                         </a>
                     </li>
                 </ul>
-            </div>
+            </nav>
+            <ul class="header__contacts">
+                <li class="header__item">
+                    <a class="header__link" href="mailto:info@dolguldur.com">
+                        <svg class="header__icon" width="16" height="12">
+                            <use href="./images/icons/icons.svg#mail"></use>
+                        </svg>
+                        info@dolguldur.com
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="tel:+380961111111">
+                        <svg class="header__icon" width="10" height="16">
+                            <use href="./images/icons/icons.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
     <main class="main">
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title">
-                    author's forge where your sites are created
-                </h1>
-                <button class="button" type="button">
-                    Go to order
-                </button>
+                <div class="slider">
+                    <div class ="slider__item">
+                        <img class="slider__img" src="./images/content/bg1.jpg" alt="">
+                        <h1 class="hero__title">
+                            author's forge where your sites are created
+                        </h1>
+                        <button class="button" type="button">
+                            Go to order
+                        </button>
+                    </div>
+                    <div class ="slider__item">
+                        <img class="slider__img" src="./images/content/bg2.jpg" alt="">
+                        <h1 class="hero__title">
+                            author's forge where your sites are created
+                        </h1>
+                        <button class="button" type="button">
+                            Go to order
+                        </button>
+                    </div>
+                    <div class ="slider__item">
+                        <img class="slider__img" src="./images/content/bg3.jpg" alt="">
+                        <h1 class="hero__title">
+                            author's forge where your sites are created
+                        </h1>
+                        <button class="button" type="button">
+                            Go to order
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="technology section">
@@ -75,6 +98,11 @@
                 </h2>
                 <ul class="technology__list">
                     <li class="technology__item">
+                        <div class="technology__wrap">
+                            <svg class="technology__icon" width="70" height="70">
+                                <use href="./images/icons/icons.svg#tech1"></use>
+                            </svg>
+                        </div>
                         <h3 class="technology__subtitle">
                             Effective team
                         </h3>
@@ -83,6 +111,11 @@
                         </p>
                     </li>
                     <li class="technology__item">
+                        <div class="technology__wrap">
+                            <svg class="technology__icon" width="70" height="70">
+                                <use href="./images/icons/icons.svg#tech2"></use>
+                            </svg>
+                        </div>
                         <h3 class="technology__subtitle">
                             punctuality
                         </h3>
@@ -91,6 +124,11 @@
                         </p>
                     </li>
                     <li class="technology__item">
+                        <div class="technology__wrap">
+                            <svg class="technology__icon" width="70" height="70">
+                                <use href="./images/icons/icons.svg#tech3"></use>
+                            </svg>
+                        </div>
                         <h3 class="technology__subtitle">
                             planning
                         </h3>
@@ -99,6 +137,11 @@
                         </p>
                     </li>
                     <li class="technology__item">
+                        <div class="technology__wrap">
+                            <svg class="technology__icon" width="70" height="70">
+                                <use href="./images/icons/icons.svg#tech4"></use>
+                            </svg>
+                        </div>
                         <h3 class="technology__subtitle">
                             innovation
                         </h3>
@@ -116,19 +159,19 @@
                 </h2>
                 <ul class="services__list">
                     <li class="services__item">
-                        <h3 class="services__text">
+                        <h3 class="services__subtitle">
                             desktop apps
                         </h3>
                         <img class="services__img" src="./images/content/desktop.jpg" width="370" height="294" alt="desktop">
                     </li>
                     <li class="services__item">
-                        <h3 class="services__text">
+                        <h3 class="services__subtitle">
                             mobile apps
                         </h3>
                         <img class="services__img" src="./images/content/mobile.jpg" width="370" height="294" alt="mobile">
                     </li>
                     <li class="services__item">
-                        <h3 class="services__text">
+                        <h3 class="services__subtitle">
                             modern design
                         </h3>
                         <img class="services__img" src="./images/content/modern.jpg" width="370" height="294" alt="modern">
@@ -151,6 +194,36 @@
                             <p class="team__work">
                                 Product Designer
                             </p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="team__item">
@@ -162,6 +235,36 @@
                             <p class="team__work">
                                 Frontend Developer
                             </p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="team__item">
@@ -173,6 +276,36 @@
                             <p class="team__work">
                                 Marketing
                             </p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="team__item">
@@ -184,14 +317,95 @@
                             <p class="team__work">
                                 UI Designer
                             </p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="">
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/icons/icons.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="partners section">
+            <div class="container">
+                <h2 class="title">
+                    Our partners
+                </h2>
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <a class="partners__link" href="#">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/icons/icons.svg#rails"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link" href="#">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/icons/icons.svg#googlepay"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link" href="#">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/icons/icons.svg#playstation"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link" href="#">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/icons/icons.svg#applepay"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link" href="#">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/icons/icons.svg#npm"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link" href="#">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/icons/icons.svg#ubereats"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
             <div class="footer__wrap">
                 <a class="logo footer__logo" href="#">
                     <img class="logo__img" src="./images/content/logo-light.svg" width="140" height="25" alt="DolGuldur logo">
@@ -216,8 +430,45 @@
                     </ul>
                 </address>
             </div>
+            <div class="footer__inner">
+                <p class="footer__social-text">
+                    join
+                </p>
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <svg class="social__icon social__icon--white" width="20" height="20">
+                                <use href="./images/icons/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <svg class="social__icon social__icon--white" width="20" height="20">
+                                <use href="./images/icons/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <svg class="social__icon social__icon--white" width="20" height="20">
+                                <use href="./images/icons/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <svg class="social__icon social__icon--white" width="20" height="20">
+                                <use href="./images/icons/icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 </html>

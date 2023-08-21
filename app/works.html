@@ -12,49 +12,47 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__wrap">
-                <nav class="menu">
-                    <a class="logo header__logo" href="#">
-                        <img class="logo__img" src="./images/content/logo.svg" width="189" height="36" alt="DolGuldur logo">
-                    </a>
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__link" href="./index.html">
-                                Home
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Our Works
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Contacts
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="header__contacts">
-                    <li class="header__item">
-                        <a class="header__link" href="mailto:info@dolguldur.com">
-                            <svg class="header__icon" width="16" height="12">
-                                <use href="./images/icons/icons.svg#mail"></use>
-                            </svg>
-                            info@dolguldur.com
+        <div class="container header__wrap">
+            <nav class="menu">
+                <a class="logo header__logo" href="#">
+                    <img class="logo__img" src="./images/content/logo.svg" width="189" height="36" alt="DolGuldur logo">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="./index.html">
+                            Home
                         </a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__link" href="tel:+380961111111">
-                            <svg class="header__icon" width="10" height="16">
-                                <use href="./images/icons/icons.svg#smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11
+                    <li class="menu__item">
+                        <span class="menu__link current">
+                            Our Works
+                        </span>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Contacts
                         </a>
                     </li>
                 </ul>
-            </div>
+            </nav>
+            <ul class="header__contacts">
+                <li class="header__item">
+                    <a class="header__link" href="mailto:info@dolguldur.com">
+                        <svg class="header__icon" width="16" height="12">
+                            <use href="./images/icons/icons.svg#mail"></use>
+                        </svg>
+                        info@dolguldur.com
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="tel:+380961111111">
+                        <svg class="header__icon" width="10" height="16">
+                            <use href="./images/icons/icons.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
     <main class="main">
@@ -63,129 +61,129 @@
                 <h1 class="sr-only">
                     Our Works
                 </h1>
-                <ul class="btn">
-                    <li class="btn__item">
-                        <button class="btn__filter" type="button">
+                <ul class="filter">
+                    <li class="filter__item">
+                        <button class="filter__btn current" type="button">
                             All
                         </button>
                     </li>
-                    <li class="btn__item">
-                        <button class="btn__filter" type="button">
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">
                             Web-sites
                         </button>
                     </li>
-                    <li class="btn__item">
-                        <button class="btn__filter" type="button">
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">
                             Apps
                         </button>
                     </li>
-                    <li class="btn__item">
-                        <button class="btn__filter" type="button">
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">
                             Designes
                         </button>
                     </li>
-                    <li class="btn__item">
-                        <button class="btn__filter" type="button">
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">
                             Brands
                         </button>
                     </li>
                 </ul>
-                <ul class="portfolio">
-                    <li class="portfolio__item">
-                        <img class="portfolio__img" src="./images/content/img1.jpg" width="370" height="294" alt="Sofa World">
-                        <div class="portfolio__info">
-                            <h2 class="portfolio__subtitle">
+                <ul class="works__list">
+                    <li class="works__item">
+                        <img class="works__img" src="./images/content/img1.jpg" width="370" height="294" alt="Sofa World">
+                        <div class="works__info">
+                            <h2 class="works__subtitle">
                                 Sofa World
                             </h2>
-                            <p class="portfolio__text">
+                            <p class="works__text">
                                 Web-site
                             </p>
                         </div>
                     </li>
-                    <li class="portfolio__item">
-                        <img class="portfolio__img" src="./images/content/img2.jpg" width="370" height="294" alt="Caffe">
-                        <div class="portfolio__info">
-                            <h2 class="portfolio__subtitle">
+                    <li class="works__item">
+                        <img class="works__img" src="./images/content/img2.jpg" width="370" height="294" alt="Caffe">
+                        <div class="works__info">
+                            <h2 class="works__subtitle">
                                 Moby Dick Caffe
                             </h2>
-                            <p class="portfolio__text">
+                            <p class="works__text">
                                 Brand
                             </p>
                         </div>
                     </li>
-                    <li class="portfolio__item">
-                        <img class="portfolio__img" src="./images/content/img3.jpg" width="370" height="294" alt="Tesla">
-                        <div class="portfolio__info">
-                            <h2 class="portfolio__subtitle">
+                    <li class="works__item">
+                        <img class="works__img" src="./images/content/img3.jpg" width="370" height="294" alt="Tesla">
+                        <div class="works__info">
+                            <h2 class="works__subtitle">
                                 Tesla charger-map
                             </h2>
-                            <p class="portfolio__text">
+                            <p class="works__text">
                                 App
                             </p>
                         </div>
                     </li>
-                    <li class="portfolio__item">
-                        <img class="portfolio__img" src="./images/content/img4.jpg" width="370" height="294" alt="Bronze Sky">
-                        <div class="portfolio__info">
-                            <h2 class="portfolio__subtitle">
+                    <li class="works__item">
+                        <img class="works__img" src="./images/content/img4.jpg" width="370" height="294" alt="Bronze Sky">
+                        <div class="works__info">
+                            <h2 class="works__subtitle">
                                 Bronze Sky
                             </h2>
-                            <p class="portfolio__text">
+                            <p class="works__text">
                                 Design
                             </p>
                         </div>
                     </li>
-                    <li class="portfolio__item">
-                        <img class="portfolio__img" src="./images/content/img5.jpg" width="370" height="294" alt="Cereal Travel Magazine">
-                        <div class="portfolio__info">
-                            <h2 class="portfolio__subtitle">
+                    <li class="works__item">
+                        <img class="works__img" src="./images/content/img5.jpg" width="370" height="294" alt="Cereal Travel Magazine">
+                        <div class="works__info">
+                            <h2 class="works__subtitle">
                                 Cereal Travel Magazine
                             </h2>
-                            <p class="portfolio__text">
+                            <p class="works__text">
                                 Design
                             </p>
                         </div>
                     </li>
-                    <li class="portfolio__item">
-                        <img class="portfolio__img" src="./images/content/img6.jpg" width="370" height="294" alt="Photonium">
-                        <div class="portfolio__info">
-                            <h2 class="portfolio__subtitle">
+                    <li class="works__item">
+                        <img class="works__img" src="./images/content/img6.jpg" width="370" height="294" alt="Photonium">
+                        <div class="works__info">
+                            <h2 class="works__subtitle">
                                 Photonium
                             </h2>
-                            <p class="portfolio__text">
+                            <p class="works__text">
                                 App
                             </p>
                         </div>
                     </li>
-                    <li class="portfolio__item">
-                        <img class="portfolio__img" src="./images/content/img7.jpg" width="370" height="294" alt="Keep Exploring">
-                        <div class="portfolio__info">
-                            <h2 class="portfolio__subtitle">
+                    <li class="works__item">
+                        <img class="works__img" src="./images/content/img7.jpg" width="370" height="294" alt="Keep Exploring">
+                        <div class="works__info">
+                            <h2 class="works__subtitle">
                                 Keep Exploring
                             </h2>
-                            <p class="portfolio__text">
+                            <p class="works__text">
                                 Brand
                             </p>
                         </div>
                     </li>
-                    <li class="portfolio__item">
-                        <img class="portfolio__img" src="./images/content/img8.jpg" width="370" height="294" alt="Architectural conceptual projects">
-                        <div class="portfolio__info">
-                            <h2 class="portfolio__subtitle">
+                    <li class="works__item">
+                        <img class="works__img" src="./images/content/img8.jpg" width="370" height="294" alt="Architectural conceptual projects">
+                        <div class="works__info">
+                            <h2 class="works__subtitle">
                                 Architectural conceptual projects
                             </h2>
-                            <p class="portfolio__text">
+                            <p class="works__text">
                                 Design
                             </p>
                         </div>
                     </li>
-                    <li class="portfolio__item">
-                        <img class="portfolio__img" src="./images/content/img9.jpg" width="370" height="294" alt="food service">
-                        <div class="portfolio__info">
-                            <h2 class="portfolio__subtitle">
+                    <li class="works__item">
+                        <img class="works__img" src="./images/content/img9.jpg" width="370" height="294" alt="food service">
+                        <div class="works__info">
+                            <h2 class="works__subtitle">
                                 Le Buzz food service
                             </h2>
-                            <p class="portfolio__text">
+                            <p class="works__text">
                                 Web-site
                             </p>
                         </div>

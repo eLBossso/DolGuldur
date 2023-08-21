@@ -2,14 +2,27 @@
     padding: 60px 0;
     background-color: $footer;
 
+    &__container {
+        display: flex;
+        align-items: flex-start;
+    }
+
     &__wrap {
         max-width: 240px;
         width: 100%;
+        margin-right: 65px;
     }
 
     &__logo {
         margin-bottom: 22px;
         display: block;
+    }
+
+    &__social-text {
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: $white;
     }
 }
 

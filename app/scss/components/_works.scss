@@ -1,4 +1,4 @@
-.btn {
+.filter {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -10,21 +10,30 @@
         }
     }
 
-    &__filter {
+    &__btn {
         font-size: 16px;
         line-height: 1;
         letter-spacing: 0.48px;
         padding: 11px 26px;
         border-radius: 4px;
         background-color: $team-bg;
+
+        &.current {
+            color: $white;
+            background-color: $accent;
+        }
     }
 }
 
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
+
+.works {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
 
     &__info {
         padding: 20px 24px;
@@ -48,3 +57,4 @@
         color: $text;
     }
 }
+
