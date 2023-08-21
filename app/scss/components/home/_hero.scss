@@ -1,12 +1,31 @@
 .hero {
-    background-color: black;
+    // background-color: black;
     @extend %bg-img;
     text-align: center;
-    padding: 200px 0;
+    // padding: 200px 0;
+    // position: relative; // еще есть разница относительно кого делать позиционирования 
 
+    &__container-slider {
+        max-width: 1600px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    // есть доцы внизу под слейдером картинок,не знаю как убрать. Их так не видно,но если дать background-color: black; ,то увидишь
+    
+    &__slider {
+        position: relative; // еще есть разница относительно кого делать позиционирования 
+    }
+
+    &__wrap {
+        position: absolute;
+        top: 24%;
+        // Текст заголовка становится в 3 ряда при центрировании
+        // left: 50%;
+        // transform: translateX(-50%);
+    }
 
     &__title {
-        max-width: 63%;
+        max-width: 55%;
         margin: 0 auto;
         margin-bottom: 30px;
         font-size: 44px;

@@ -1,6 +1,7 @@
 $(function(){
-    $('.slider').slick({
+    $('.hero__slider').slick({
+        arrows : false,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 1000,
     });
 });
