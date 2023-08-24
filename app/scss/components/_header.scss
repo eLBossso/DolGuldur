@@ -2,7 +2,7 @@
     border-bottom: 2px solid $border-bt;
     padding: 22px 0;
 
-    &__wrap {
+    &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -48,9 +48,21 @@
         font-size: 16px;
         line-height: 1.1;
         letter-spacing: 0.32px;
+        position: relative;
 
         &.current {
             color: $accent;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: -30px;
+                height: 4px;
+                border-radius: 4px;
+                background-color: $accent;
+            }
         }
     }
 }

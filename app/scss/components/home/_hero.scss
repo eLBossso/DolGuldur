@@ -1,42 +1,25 @@
 .hero {
-    // background-color: black;
+    background-color: black;
     @extend %bg-img;
+    background-image: url('../../../images/content/bg1.jpg');
     text-align: center;
-    // padding: 200px 0;
-    // position: relative; // еще есть разница относительно кого делать позиционирования от этого меняется высота загаловка
+    padding: 200px 0;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
 
-    &__container-slider {
-        max-width: 1600px;
-        // padding: 0 15px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 0;
 
-        &:before {
-            content: "";
-            background-color: rgba(47, 48, 58, 0.60);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-    }
-
-    &__slider {
-        font-size: 0;
-        position: relative; // еще есть разница относительно кого делать позиционирования от этого меняется высота загаловка
-    }
-
-    &__wrap {
+    &::before {
+        content: "";
         position: absolute;
-        top: 24%;
-        // Текст заголовка становится в 3 ряда при центрировании  и его никак не выровнять
-        // left: 50%;
-        // transform: translateX(-50%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(47, 48, 58, 0.60);
+        z-index: -1;
     }
-
 
     &__title {
         max-width: 55%;
