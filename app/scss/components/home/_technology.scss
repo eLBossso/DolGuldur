@@ -20,6 +20,24 @@
         margin-bottom: 30px;
         border-radius: 4px;
         border: 1px solid $text;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &--tech1 {
+            background-image: url(../../../images/content/tech1.svg);
+        }
+
+        &--tech2 {
+            background-image: url(../../../images/content/tech2.svg);
+        }
+
+        &--tech3 {
+            background-image: url(../../../images/content/tech3.svg);
+        }
+
+        &--tech4 {
+            background-image: url(../../../images/content/tech4.svg);
+        }
     }
 
     &__subtitle {
