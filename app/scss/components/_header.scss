@@ -22,6 +22,21 @@
         display: flex;
         align-items: center;
         color: $text;
+        border: 1px solid transparent;
+        transition: border 0.5s, color 0.7s, opacity 0.5s;
+
+        &:focus {
+            border-radius: 4px;
+            border: 1px solid #EC3C05;
+        }
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
     }
 
     &__icon {
@@ -50,6 +65,28 @@
         line-height: 1.1;
         letter-spacing: 0.32px;
         position: relative;
+        padding: 24px 4px;
+        border: 1px solid transparent;
+        transition: color 0.7s, border 0.5s, opacity 0.5s;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            border-radius: 4px;
+            border: 1px solid $accent;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+
+        &--opacity {
+            &:active {
+                opacity: 0.5;
+            }
+        }
 
         &.current {
             color: $accent;
@@ -59,7 +96,7 @@
                 position: absolute;
                 width: 100%;
                 left: 0;
-                bottom: -30px;
+                bottom: -7px;
                 height: 4px;
                 border-radius: 4px;
                 background-color: $accent;

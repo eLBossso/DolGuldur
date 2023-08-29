@@ -40,6 +40,24 @@
         align-items: center;
         color: $link;
 
+        &--interactive {
+            display: inline-block;
+            border: 1px solid transparent;
+            transition: color 0.5s, border 0.5s, opacity 0.5s;
+            &:hover {
+                color: $accent;
+            }
+    
+            &:focus {
+                border-radius: 4px;
+                border: 1px solid $accent;
+            }
+
+            &:active {
+                opacity: 0.6;
+            }
+        }
+
         &--white {
             color: $white;
         }
