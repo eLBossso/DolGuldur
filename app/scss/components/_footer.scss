@@ -15,7 +15,22 @@
 
     &__logo {
         margin-bottom: 22px;
-        display: block;
+        display: inline-block;
+        transition: opacity 0.5s, outline 1s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:focus {
+            border-radius: 4px;
+            outline: 1px solid $accent;
+            outline-offset: 5px;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
     }
 
     &__text {
@@ -39,29 +54,28 @@
         display: flex;
         align-items: center;
         color: $link;
+        display: inline-block;
+        transition: color 0.5s, outline 0.5s, opacity 0.5s;
 
-        &--interactive {
-            display: inline-block;
-            border: 1px solid transparent;
-            transition: color 0.5s, border 0.5s, opacity 0.5s;
-            &:hover {
-                color: $accent;
-            }
-    
-            &:focus {
-                border-radius: 4px;
-                border: 1px solid $accent;
-            }
-
-            &:active {
-                opacity: 0.6;
-            }
+        &:hover {
+            color: $accent;
         }
 
+        &:focus {
+            border-radius: 4px;
+            outline: 1px solid $accent;
+            outline-offset: 5px;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+        
         &--white {
             color: $white;
         }
     }
+
 
     &__icon {
         margin-right: 10px;

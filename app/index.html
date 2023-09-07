@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link menu__link--opacity" href="#">
+                        <a class="menu__link menu__link" href="#">
                             Contacts
                         </a>
                     </li>
@@ -61,9 +61,18 @@
                 <h1 class="hero__title">
                     author's forge where your sites are created
                 </h1>
-                <button class="button" type="button">
+                <button class="button" type="button" data-modal-open>
                     Go to order
                 </button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal__button" type="button" data-modal-close>
+                        <svg class="modal__button-svg" width="16" height="16">
+                            <use href="./images/icons/icons.svg#modal"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
         <section class="technology section">
@@ -381,12 +390,12 @@
                             </a>
                         </li>
                         <li class="address__item">
-                            <a class="address__link address__link--interactive" href="mailto:info@dolguldur.com">
+                            <a class="address__link address__link" href="mailto:info@dolguldur.com">
                                 info@dolguldur.com
                             </a>
                         </li>
                         <li class="address__item">
-                            <a class="address__link address__link--interactive" href="tel:+380961111111">
+                            <a class="address__link address__link" href="tel:+380961111111">
                                 +38 096 111 11 11
                             </a>
                         </li>
